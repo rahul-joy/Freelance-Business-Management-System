@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- =====  Favicon Link Part Start Here  =====  -->
+    <link rel="apple-touch-icon" href="assets/images/2_favicon/favicon.png">
+    <link rel="shortcut icon" href="assets/images/2_favicon/favicon.ico">
+    <!-- =====  Favicon Link Part End Here  =====  -->
+
+    <!-- =====  Google Font Link Start Here  =====  -->
+    <!-- Google Font (font-family: 'K2D', sans-serif;) -->
+    <link href="../../external.html?link=https://fonts.googleapis.com/css?family=K2D:400,500,600,700,800&amp;display=swap" rel="stylesheet">
+    <!-- Google Font (font-family: 'Roboto', sans-serif;) -->
+    <link href="../../external.html?link=https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Google Font (font-family: 'Open Sans', sans-serif;) -->
+    <link href="../../external.html?link=https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+    <!-- =====  Google Font Link End Here  =====  -->
+
+    <!-- =====  CSS File Link Start Here  =====  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font/flaticon.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- =====  CSS File Link End Here  =====  -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1; /* Light background for contrast */
+        }
+        .navbar {
+            background-color: #2C6777;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 20px 30px;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .navbar .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 1.4rem; /* Slightly bigger font for the logo */
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem; /* Slightly larger text for better visibility */
+            position: relative;
+        }
+        .nav-links a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #fff200; /* Bright yellow hover effect */
+        }
+        .profile-icon {
+            background-color: white; /* White background for profile icon */
+            border-radius: 50%;
+            width: 40px; /* Slightly bigger profile icon */
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .profile-icon:hover {
+            background-color: #6cfff8; /* Orange color on hover */
+        }
+        .dropdown-menu {
+            .dropdown-menu {
+                display: none;
+                position: absolute;
+                right: 135px;
+                top: 80px;
+                background-color: #2C6777;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                width: 160px;
+                padding: 10px 0;
+                z-index: 999;
+        }
+        .dropdown-menu a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+        }
+        .dropdown-menu a:hover {
+            background-color: #1f4d4d; /* Darker shade for hover effect */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper" class="wrapper">
+
+        <!-- =====  Header Part Start Here  =====  -->
+        <div id="section-home-area" class="header">
+
+          
+
+            <!-- Navigation Part Start Here -->
+            <div class="navbar">
+                <div class="logo">LOGO</div>
+                <div class="nav-links">
+                    <a href="http://localhost/rixoybd.com">Home</a>
+                    <a href="global_giftcard.html">Gift Cards</a>
+                    <a href="#">Services</a>
+                    <a href="http://localhost/rixoybd.com/blog/">Blog</a>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="profile-icon" onclick="toggleDropdown()">&#128100;</div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../user/login.html">Sign In</a>
+                    <a href="../user/register.html">Sign Up</a>
+                </div>
+            </div>
+        
+            <script>
+                function toggleDropdown() {
+                    const dropdownMenu = document.getElementById('dropdownMenu');
+                    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+                }
+        
+                window.onclick = function(event) {
+                    if (!event.target.matches('.profile-icon')) {
+                        const dropdownMenu = document.getElementById('dropdownMenu');
+                        if (dropdownMenu.style.display === 'block') {
+                            dropdownMenu.style.display = 'none';
+                        }
+                    }
+                }
+            </script>
+
+                    <div class="header-mobilemenu clearfix">
+                        <div class="tm-mobilenav"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Part End Here -->
+
+        </div>
+        <!-- =====  Header Part Ends Here  =====  -->
+
+        
+
+        <!-- =====  Main Content Part Start Here  =====  -->
+        <main class="main-content bg-grey">
+
+            <!-- Offer Part Start Here -->
+            <div class="tm-section shop-page-area bg-white tm-padding-section ">
+                <div class="container">
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10">
+                            <div class="tm-section-title text-center">
+                                <h2>Get Your Gift Card Offer Now</h2>
+                                <p>Many of gift card is waiting for you get it now.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tm-shop-products">
+                        <div class="row mt-50-reverse">
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/1_amazon.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/1_amazon.jpg" alt="1_amazon_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/1_amazon.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/1_amazon.html" target="_blank">Amazon</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/2_ebay.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/2_ebay.jpg" alt="2_ebay_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/2_ebay.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/2_ebay.html" target="_blank">EBay</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/3_walmart.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/3_walmart.jpg" alt="3_walmart_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/3_walmart.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/3_walmart.html" target="_blank">Walmart</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/4_bestbuy.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/4_bestbuy.jpg" alt="18_nintendo_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/4_bestbuy.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/4_bestbuy.html" target="_blank">Best Buy</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/5_netflix.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/5_netflix.jpg" alt="5_netflix_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/5_netflix.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/5_netflix.html" target="_blank">Netflix</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/6_itunes.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/6_itunes.jpg" alt="6_itunes_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/6_itunes.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/6_itunes.html" target="_blank">Itunes</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/7_spotify.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/7_spotify.jpg" alt="7_spotify_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/7_spotify.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/7_spotify.html" target="_blank">Spotify</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/8_starbucks.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/8_starbucks.jpg" alt="8_starbucks_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/8_starbucks.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/8_starbucks.html" target="_blank">Starbucks</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/9_paypal.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/9_paypal.jpg" alt="9_paypal_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/9_paypal.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/9_paypal.html" target="_blank">Paypal</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/10_mastercard.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/10_mastercard.jpg" alt="10_mastercard_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/10_mastercard.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/10_mastercard.html" target="_blank">Master Card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/11_visacard.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/11_visacard.jpg" alt="11_visacard_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/11_visacard.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/11_visacard.html" target="_blank">Visa Card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/12_amexcard.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/12_amexcard.jpg" alt="12_amexcard_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/12_amexcard.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/12_amexcard.html" target="_blank">Amex Card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/13_xbox.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/13_xbox.jpg" alt="13_xbox_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/13_xbox.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/13_xbox.html" target="_blank">Xbox</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/14_playstation.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/14_playstation.jpg" alt="14_playstation_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/14_playstation.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/14_playstation.html" target="_blank">Play Station</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/15_roblox.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/15_roblox.jpg" alt="15_roblox_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/15_roblox.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/15_roblox.html" target="_blank">Roblox</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/16_steam.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/16_steam.jpg" alt="16_steam_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/16_steam.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/16_steam.html" target="_blank">Steam</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/17_gamestop.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/17_gamestop.jpg" alt="17_gamestop_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/17_gamestop.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/17_gamestop.html" target="_blank">Game Stop</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/18_nintendo.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/18_nintendo.jpg" alt="18_nintendo_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/18_nintendo.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/18_nintendo.html" target="_blank">Nintendo</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/19_googleplay.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/19_googleplay.jpg" alt="18_googleplay_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/19_googleplay.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/19_googleplay.html" target="_blank">Google Play</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+
+                            <!-- Single Offer Part Start Here -->
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-50">
+                                <div class="tm-product">
+                                    <div class="tm-product-image">
+                                        <a class="tm-product-imagelink" href="assets/pages/giftcard/20_microsoft.html" target="_blank">
+                                            <img src="assets/images/10_offer/1_giftcard/20_microsoft.jpg" alt="19_microsoft_image">
+                                        </a>
+                                        <ul class="tm-product-actions">
+                                            <li><a href="assets/pages/giftcard/20_microsoft.html" target="_blank"><i class="flaticon-link"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="flaticon-youtube-logo"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tm-product-content">
+                                        <h3 class="tm-product-title"><a href="assets/pages/giftcard/20_microsoft.html" target="_blank">Microsoft</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Offer Part End Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Offer Part End Here -->
+        </main>
+        <!-- =====  Main Content Part End Here  =====  -->
+
+        <!-- =====  Footer Part Start Here  ===== -->
+        <footer class="footer" data-bgimage="assets/images/9_footer_bg/footer_bg.jpg" data-black-overlay="9">
+
+            <!-- Footer Top Part Start Here -->
+            <div class="footer-toparea tm-padding-section">
+                <div class="container">
+                    <div class="row widgets footer-widgets">
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <!-- Footer Top (Info) Part Start Here -->
+                            <div class="single-widget widget-info">
+                                <a href="index-2.html" class="widget-info-logo">
+                                    <img src="#" alt="">
+                                </a>
+                                <p>offervox is one of the most dynamic offer promoted company. We will provide gift card, smart phone, apps, games, e-book and more global offer.</p>
+                                <ul class="widget-info-social">
+                                    <li><a href="../../external.html?link=https://www.facebook.com/profile.php?id=100009082644058" target="_blank"><i class="flaticon-facebook" title="Facebook"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="flaticon-twitter" title="Twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="flaticon-linkedin" title="Linkedin"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="flaticon-instagram" title="Instagram"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="flaticon-quora" title="Quora"></i></a></li>
+                                    <li><a href="../../external.html?link=https://www.youtube.com/channel/UCCmSWFBdQSXVHIeIY2MCUlQ?" target="_blank"><i class="flaticon-youtube" title="Youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Footer Top (Info) Part End Here -->
+                        </div>
+
+                        <!-- Footer Top (Links) Part Start Here -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-recentpost">
+                                <h3 class="widget-title">Support Links</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-list"></i>
+                                        <div class="widget-recentpost-content">
+                                            <h6><a href="../../external.html?link=http://blog.giftcardfusion.com/" target="_blank">Blog</a></h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-list"></i>
+                                        <div class="widget-recentpost-content">
+                                            <h6><a href="../../external.html?link=http://freebies.giftcardfusion.com/" target="_blank">Freebis</a></h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-list"></i>
+                                        <div class="widget-recentpost-content">
+                                            <h6><a href="../../external.html?link=http://tutorial.giftcardfusion.com/" target="_blank">Video Tutorial</a></h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-list"></i>
+                                        <div class="widget-recentpost-content">
+                                            <h6><a href="privacy_policy.html" target="_blank">Privacy Policy</a></h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-list"></i>
+                                        <div class="widget-recentpost-content">
+                                            <h6><a href="terms_of_service.html" target="_blank">Terms of Service</a></h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Top (Links) Part End Here -->
+
+                        <!-- Footer Top (Contact) Part Start Here -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-contact">
+                                <h3 class="widget-title">Contact Us</h3>
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-address"></i>
+                                        <p>One Sansome Street, Suite 3500 San Francisco CA 94104</p>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-email"></i>
+                                        <p><a href="#">info@offervox.com</a></p>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-call"></i>
+                                        <p><a href="#">1 - 415 - 455 - 6263</a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Top (Contact) Part Start Here -->
+
+                        <!-- Footer Top (Newsletter) Part Start Here -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <!-- Single Widget (Widget Newsletter) -->
+                            <div class="single-widget widget-newsletter">
+                                <h3 class="widget-title">Get In Touch</h3>
+                                <!--  <p>Please subscribe to know our latest offer</p>  -->
+                                <form action="../../external.html?link=https://giftcardfusion.com/newsletter.php" method="post" id="tm-contactform" class="widget-newsletter-form">
+                                    <div class="tm-mailchimp-form">
+                                        <input type="email" name="email" required placeholder="Enter Your Valid Email">
+                                    </div>
+                                    <div class="tm-contact-formfield">
+                                        <button type="mc-submit" value="Submit Form" class="tm-button">Subscribe Now <b></b></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Single Widget (Widget Newsletter) -->
+                        </div>
+                        <!-- Footer Top (Newsletter) Part End Here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top Part End Here -->
+
+            <!-- Footer Bottom Part Start Here -->
+            <div class="footer-bottomarea">
+                <div class="container">
+                    <p class="footer-copyright">Copyright © 2024 Rahul, Murad, Sanet </p>
+                </div>
+            </div>
+            <!-- Footer Bottom Part End Here -->
+        </footer>
+        <!-- =====  Footer Part End Here  ===== -->
+    </div>
+
+    <!-- =====  Js Files Link Part Start Here  ===== -->
+    <script src="assets/js/modernizr-3.6.0.min.html"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- =====  Js Files Link Part End Here  ===== -->
+</body>
+
+
+
+
+<!-- Mirrored from offervox.com/global_giftcard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Dec 2020 12:10:45 GMT -->
+
+<!-- Mirrored from sweepprize.site/c/global_giftcard.html by HTTrack Website Copier/3.x [XR&CO'2017], Sun, 31 Oct 2021 09:34:03 GMT -->
+</html>

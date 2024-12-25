@@ -1,0 +1,113 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 1px; /* Reduced gap between blog posts horizontally and vertically */
+}
+
+.blog-post {
+    background-color: white;
+    padding: 15px;  /*Display content er vitorer kaj. Reduced padding to make the content more compact */
+    margin: 0;      /* Set margin to 0 to prevent any extra space */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 32%;  /* Adjusted to show 3 posts per row with slightly reduced width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px; /* Reduced margin between image and text */
+}
+
+.blog-post h2 {
+    font-size: 18px;
+    margin: 5px 0;  /* Reduced margin for tighter spacing */
+}
+
+.blog-post .author {
+    font-size: 14px;
+    color: #888;
+    margin: 5px 0;  /* Reduced margin for tighter spacing */
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Pagination Styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;  /* Reduced gap between pagination buttons */
+}
+
+.pagination a {
+    padding: 8px 12px;  /* Reduced padding to make buttons more compact */
+    margin: 0;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+
+.pagination .active {
+    background-color: #0056b3;
+    pointer-events: none;
+}
+
+
+
+
+
+
